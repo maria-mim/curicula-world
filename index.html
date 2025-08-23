@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Home – Calculia World</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0fff0; /* soft light green */
+    color: #2e7d32; /* dashboard dark green */
+    line-height: 1.6;
+  }
+
+  /* Navbar */
+  .navbar {
+    background-color: #a8e6a3; /* dashboard navbar green */
+    padding: 18px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  }
+
+  .navbar h2 {
+    color: #2e7d32;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .navbar a {
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 24px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+  }
+
+  .navbar a:hover {
+    background: #88c28d;
+    color: #ffffff;
+  }
+
+  /* Hero Section */
+  .bg-section {
+    background: url('https://www.speld.org.nz/wp-content/uploads/2018/02/what-is-dyscalculia.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+  }
+
+  .bg-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3); /* lighter overlay for clarity */
+  }
+
+  .bg-section .card {
+    position: relative;
+    background: #f9fff9; /* light dashboard card */
+    padding: 50px;
+    width: 480px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    z-index: 2;
+    text-align: center;
+  }
+
+  .bg-section h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #2e7d32;
+  }
+
+  .bg-section p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 25px;
+  }
+
+  .section-link {
+    display: block;
+    margin: 12px auto;
+    background-color: #a8e6a3;
+    color: #2e7d32;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  .section-link:hover {
+    background-color: #88c28d;
+    color: #fff;
+    transform: translateY(-3px);
+  }
+
+  /* About Section */
+  section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  #about {
+    background: #e8f5e9;
+  }
+
+  #about h2, #contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #2e7d32;
+  }
+
+  #about p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  /* Contact Section */
+  #contact {
+    background: #f1f8f6;
+  }
+
+  form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: #f9fff9;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  form input, form textarea {
+    margin: 10px 0;
+    padding: 14px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  form input:focus, form textarea:focus {
+    border-color: #2e7d32;
+  }
+
+  button {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #1b5e20;
+  }
+
+</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h2>Calculia World</h2>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- Home Section -->
+  <section id="home" class="bg-section">
+    <div class="card">
+      <h1>Welcome</h1>
+      <p>A friendly way to learn math🧮</p>
+      <a href="user_portal.php" class="section-link">🎯 Learner Section</a>
+      <a href="admin_portal.php" class="section-link">📚 Instructor Section</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Our Project</h2>
+    <p>
+      Calculia World is a learning platform designed to support learners with
+      difficulties in math processing. Our goal is to make learning engaging,
+      supportive, and tailored for unique learning needs.
+    </p> <br><br>
+    <p>
+      ✅ Vision (দৃষ্টি)<br>
+      To create an inclusive and enjoyable learning experience for children with Dyscalculia, making mathematics and shapes easy, fun, and stress-free.<br><br>
+      ✅ Mission (মিশন)<br>
+      Develop simple, colorful, and interactive learning materials in the native language.<br>
+      Reduce learning anxiety and build confidence through playful methods.<br>
+      Support parents and teachers with tools to make learning engaging and accessible for every child.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="✏ Your Name" required>
+      <input type="email" name="email" placeholder="📧 Your Email" required>
+      <textarea name="message" rows="5" placeholder="💬 Message to send" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>
