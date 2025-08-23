@@ -1,11 +1,12 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "";
-$dbname = "medialearn";
+$host = "tcp:db-server-calculia.database.windows.net";
+$user = "mim";
+$password = "Maria5066$";
+$dbname = "calculiaworld";
+
 
 // Create connection
-$conn = new mysqli($host, $user, $password, $dbname);
+$conn = new mysqli($host, $user, $password, $dbname, 1433);
 
 // Check connection
 if ($conn->connect_error) {
