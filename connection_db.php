@@ -6,7 +6,7 @@ $dbname = "calculiaworld";
 
 
 // Create connection
-$conn = new mysqli($host, $user, $password, $dbname, 1433);
+$conn = new mysqli($host, $user, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
