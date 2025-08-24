@@ -28,7 +28,7 @@ if (isset($_POST['register'])) {
         if ($stmt->num_rows > 0) {
             $error = "Email already registered.";
         } else {
-            
+            $hashed = password_hash($password, PASSWORD_DEFAULT);
             $stmt = $conn->prepare("INSERT INTO users (first_name, last_name, address, email, phone, password) VALUES (?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("ssssss", $first, $last, $address, $email, $phone, $hashed);
 
