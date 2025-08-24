@@ -1,5 +1,5 @@
 <?php
-$host = "tcp:db-server-calculia.database.windows.net";
+$host = "db-calculia.mysql.database.azure.com";
 $user = "mim";
 $password = "Maria5066$";
 $dbname = "calculiaworld";
